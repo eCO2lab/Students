@@ -1,0 +1,11 @@
+name: "eCO2lab"
+output_dir: "."
+navbar:
+  title: "web para estudiantes"
+  left:
+    - text: "Anibal"
+      href: index.html
+output:
+  html_document:
+    theme: united
+    highlight: textmate
