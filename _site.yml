@@ -1,13 +1,13 @@
 name: "eCO2lab"
 output_dir: "."
 navbar:
-  title: "web para estudiantes"
+  title: "eCO2lab!"
   left:
-    - text: "Anibal"
+    - text: "The lab"
       href: index.html
-    - text: "Laura"
+    - text: "About us"
       href: about.html
 output:
   html_document:
-    theme: united
+    theme: simplex
     highlight: textmate
