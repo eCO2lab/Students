@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Anibal"
       href: index.html
+      - text: "Laura"
+      href: about.html
 output:
   html_document:
     theme: united
