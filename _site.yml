@@ -5,7 +5,7 @@ navbar:
   left:
     - text: "Anibal"
       href: index.html
-      - text: "Laura"
+    - text: "Laura"
       href: about.html
 output:
   html_document:
