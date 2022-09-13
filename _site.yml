@@ -7,7 +7,7 @@ navbar:
       href: index.html
     - text: "About us"
       href: about.html
-    - text: "Students"
+    - text: "Undergraduate students"
       menu:
               - text: "Laura"
                 href: Laura.html 
