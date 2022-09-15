@@ -1,8 +1,11 @@
 name: "eCO2lab"
+cover-image: images/ecolab.jpeg
 output_dir: "."
 navbar:
-  title: "eCO2lab"
   type: inverse
+  rigth: 
+    - href: https://github.com/eCO2lab/Students
+      icon: fa-github
   left:
     - text: "The lab"
       icon: fa-home    
@@ -18,13 +21,10 @@ navbar:
                 href: Anibal.html
               - text: "Fernanda"
                 href: Fernanda.html
-  rigth: 
-    - icon: fa-envelope-o
-      href: mailto:lucas.bravo@alumnos.uv.cl
-    - icon: fa-book-open
-      href: https://www.instagram.com/eco2lab/
+
 output:
   html_document:
     theme: cosmo
     highlight: textmate
+    css: styles.css
     
