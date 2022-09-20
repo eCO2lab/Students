@@ -1,15 +1,17 @@
 name: "eCO2lab"
 output_dir: "."
 navbar:
+  title: "eCO2lab"
   type: inverse
   left:
     - text: "The lab"
-      icon: fa-home    
+      icon: fa-home
       href: index.html
-    - text: "About us"
+    - text: "Team"
+      icon: fas fa-users
       href: about.html
     - text: "Undergraduate students"
-      icon: fa-book-open
+      icon: fa-solid fa-seedling
       menu:
               - text: "Laura"
                 href: Laura.html 

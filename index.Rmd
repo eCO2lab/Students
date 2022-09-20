@@ -2,8 +2,8 @@
 output: html_document
 ---
 
-```{r, echo=FALSE, out.width = "50%", fig.align = "center"}
-knitr::include_graphics("images/ecolab.jpeg")
-```
+# Ecofisiología y Ecología Evolutiva Marina
 
+------------------------------------------------------------------------
 
+Laboratorio de experimentación y campo enfocado en la fisiología, cambio climatico y genetica.

@@ -2,3 +2,20 @@
 output: html_document
 ---
 
+# El equipo
+
+#### **Simone Baldanzi**
+
+------------------------------------------------------------------------
+
+#### **Francisca Fernandez**
+
+Bióloga Marina de la Universidad de Valparaíso Asistente de fondecyt 11221161
+
+------------------------------------------------------------------------
+
+#### **Lucas Bravo Guzman**
+
+![](images/lucas.JPG){width="204"}
+
+Biólogo Marino de la Universidad de Valparaíso Asistente de fondecyt 11221161
