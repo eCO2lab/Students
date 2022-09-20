@@ -1,5 +1,4 @@
 name: "eCO2lab"
-cover-image: images/ecolab.jpeg
 output_dir: "."
 navbar:
   type: inverse
@@ -30,5 +29,3 @@ output:
   html_document:
     theme: cosmo
     highlight: textmate
-    css: styles.css
-    
