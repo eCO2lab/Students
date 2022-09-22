@@ -4,13 +4,13 @@ navbar:
   title: "eCO2lab"
   type: inverse
   left:
-    - text: "The lab"
+    - text: "El lab"
       icon: fa-home
       href: index.html
-    - text: "Team"
+    - text: "Equipo"
       icon: fas fa-users
       href: about.html
-    - text: "Undergraduate students"
+    - text: "Estudiantes de pregrado"
       icon: fa-solid fa-seedling
       menu:
               - text: "Laura"
@@ -19,6 +19,9 @@ navbar:
                 href: Anibal.html
               - text: "Fernanda"
                 href: Fernanda.html
+    - text: "Proyectos"
+      icon: fa-solid fa-folder
+      href: proyectos.html
   right: 
     - icon: fa-github
       href: https://github.com/eCO2lab/Students

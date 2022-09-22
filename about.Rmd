@@ -2,20 +2,36 @@
 output: html_document
 ---
 
-# El equipo
+# **El equipo**
 
-#### **Simone Baldanzi**
+### Simone Baldanzi
+
+![](images/simone.jpeg){width="5.4cm"}
+
+<div style="text-align: justify">
+
+Profesor de la Facultad de Ciencias del Mar y RR NN. de la Universidad de Valparaiso y director del laboratorio de Ecoficioslogia y Ecologia evolutiva marina (e°CO2lab) "El núcleo central de mis preguntas científicas nacen de la necesidad de entender como el cambio climático y el impacto antrópico en curso afectan a los organismos marinos en todos los niveles de organización biológica, desde sus componentes moleculares hasta el ecosistema, pasando por respuestas fisiológicas a nivel de los organismos".
+
+<div/>
 
 ------------------------------------------------------------------------
 
-#### **Francisca Fernandez**
+### Francisca Fernandez
+
+<div style="text-align: justify">
 
 Bióloga Marina de la Universidad de Valparaíso Asistente de fondecyt 11221161
 
+<div/>
+
 ------------------------------------------------------------------------
 
-#### **Lucas Bravo Guzman**
+### Lucas Bravo Guzman
 
-![](images/lucas.JPG){width="204"}
+![](images/lucas.JPG){width="5.4cm"}
+
+<div style="text-align: justify">
 
 Biólogo Marino de la Universidad de Valparaíso Asistente de fondecyt 11221161
+
+<div/>
