@@ -10,7 +10,7 @@ output: html_document
 
 <div style="text-align: justify">
 
-Profesor de la Facultad de Ciencias del Mar y RR NN. de la Universidad de Valparaiso y director del laboratorio de Ecoficioslogia y Ecologia evolutiva marina (e°CO2lab) "El núcleo central de mis preguntas científicas nacen de la necesidad de entender como el cambio climático y el impacto antrópico en curso afectan a los organismos marinos en todos los niveles de organización biológica, desde sus componentes moleculares hasta el ecosistema, pasando por respuestas fisiológicas a nivel de los organismos".
+Profesor de la Facultad de Ciencias del Mar y RR NN. de la Universidad de Valparaiso y director del laboratorio de Ecoficioslogia y Ecologia evolutiva marina (e°CO~2~lab) "El núcleo central de mis preguntas científicas nacen de la necesidad de entender como el cambio climático y el impacto antrópico en curso afectan a los organismos marinos en todos los niveles de organización biológica, desde sus componentes moleculares hasta el ecosistema, pasando por respuestas fisiológicas a nivel de los organismos".
 
 <div/>
 

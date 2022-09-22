@@ -1,7 +1,7 @@
 name: "eCO2lab"
 output_dir: "."
 navbar:
-  title: "eCO2lab"
+  title: "e°CO2lab"
   type: inverse
   left:
     - text: "El lab"

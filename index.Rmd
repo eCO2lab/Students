@@ -2,8 +2,14 @@
 output: html_document
 ---
 
-# Ecofisiología y Ecología Evolutiva Marina
+# **Ecofisiología y Ecología Evolutiva Marina**
 
 ------------------------------------------------------------------------
 
 Laboratorio de experimentación y campo enfocado en la fisiología, cambio climatico y genetica.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(embedr)
+embed_video("/Users/lucasb/Dropbox/Mac/Desktop/Students/images/crab.mp4"
+, attribute = c("controls", "loop"))
+```
