@@ -1,7 +1,9 @@
 ---
-title: "Fluctuating experiment"
+title: "**Fluctuating experiment**"
 output: html_document
 ---
+
+
 ```{r, include=FALSE}
 
 # Library
