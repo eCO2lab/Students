@@ -6,10 +6,10 @@ output: html_document
 
 ------------------------------------------------------------------------
 
-Laboratorio de experimentación y campo enfocado en la fisiología, cambio climatico y genetica.
-
+<center>
 ```{r echo=FALSE}
 library(vembedr)
 embed_url("https://youtu.be/wyj_duWecbQ")
 ```
+</center>
 
