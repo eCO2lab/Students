@@ -1,12 +1,9 @@
 ---
 pagetitle: "El lab"
+title: Ecofisiología y Ecología evolutiva marina
 output: html_document
 
 ---
-
-# **Ecofisiología y Ecología evolutiva marina**
-
-------------------------------------------------------------------------
 
 <center>
 ```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}

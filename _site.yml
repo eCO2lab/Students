@@ -35,8 +35,7 @@ navbar:
 output:
   html_document:
     css: style.css
-    theme: cosmo
-    highlight: textmate
+
     
     
     
