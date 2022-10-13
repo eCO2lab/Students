@@ -1,0 +1,63 @@
+---
+title: "Montemar"
+output: html_document
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(scales) 
+library(gridExtra)
+library(writexl)
+library(xts) 
+library(dygraphs)
+library(htmlwidgets)
+```
+
+```{r, include=FALSE}
+montemar<-read.table("~/desktop/ECOLAB!/MEDICIONES MONTEMAR 2021-2022/miniDOT_neo_z3.dat", header = FALSE)
+```
+
+```{r include=FALSE}
+
+#REMOVING DATA ABOVE 20°C
+remo<-montemar$V8<20
+montemar_nice<-montemar[remo, ]
+
+#REMOVING DATE WHERE MINIDOT WASNT IN THE WATER
+montemar_nice_s<-montemar_nice[-c(14200:16100), ]
+montemar_ugly<-montemar_nice[c(14200:16100), ]
+
+#MAKING DATETIME COLUMN and ADDING COLUMNS GROUPS
+montemar_date <- montemar_nice %>%
+  unite("date", V1:V3, sep = "-")
+montemar_date$date<-anytime::anydate(montemar_date$date)
+
+montemar_date$jd <- yday(montemar_date$date)  
+montemar_date$day<-day(montemar_date$date)
+montemar_date$month<-month(montemar_date$date)
+montemar_date$year<-year(montemar_date$date)
+
+#mean temperature by days
+Day_temp<-montemar_date %>%        
+  group_by(month, day, year) %>%   
+  dplyr::summarize(mean_temp = mean(V8), SD=sd(V8))  
+
+Day_temp<-Day_temp %>% mutate(date = make_date(year, month, day))
+```
+
+```{r, echo=FALSE}
+#Interactive plot 
+
+interactive <- xts(x = Day_temp$mean_temp, order.by = Day_temp$date)
+
+f<-dygraph(interactive) %>%
+  dyOptions(labelsUTC = FALSE, fillGraph=FALSE, fillAlpha=0.1, drawGrid = FALSE, colors="#D8AE5A") %>%
+  dyRangeSelector() %>%
+  dyCrosshair(direction = "vertical") %>%
+  dyHighlight(highlightCircleSize = 5, highlightSeriesBackgroundAlpha = 0.2, hideOnMouseOut = FALSE)  %>%
+  dyRoller(rollPeriod = 1)
+
+saveWidget(f, file=paste0( getwd(), "/images/montemar1.html"))
+f
+```

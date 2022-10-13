@@ -22,6 +22,9 @@ navbar:
     - text: "Proyectos"
       icon: fa-solid fa-folder
       href: proyectos.html
+    - text: "Montemar"
+      icon: fa-solid fa-water
+      href: montemar.html
   right: 
     - icon: fa-github
       href: https://github.com/eCO2lab/Students
