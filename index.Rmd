@@ -1,9 +1,5 @@
 ---
 pagetitle: "El lab"
-header-includes:
-- \usepackage{titling}
-- \pretitle{\begin{center}\LARGE\includegraphics[width=12cm]{ecolab.jpg}\\[\bigskipamount]}
-- \posttitle{\end{center}}
 output: html_document
 
 ---

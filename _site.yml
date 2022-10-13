@@ -35,5 +35,10 @@ navbar:
       
 output:
   html_document:
+    includes:
+      in_header: header.html
     theme: cosmo
     highlight: textmate
+    
+    
+    
