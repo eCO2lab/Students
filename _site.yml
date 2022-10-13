@@ -34,8 +34,7 @@ navbar:
       
 output:
   html_document:
-    includes:
-      in_header: header.html
+    css: style.css
     theme: cosmo
     highlight: textmate
     
