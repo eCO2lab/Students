@@ -23,7 +23,6 @@ navbar:
       icon: fa-solid fa-folder
       href: proyectos.html
     - text: "Montemar"
-      icon: fa("water")
       href: montemar.html
   right: 
     - icon: fa-github
