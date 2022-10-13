@@ -1,5 +1,5 @@
 ---
-title: "Montemar"
+pagetitle: "Montemar"
 output: html_document
 ---
 
@@ -62,4 +62,5 @@ f<-dygraph(interactive, main = "Temperatura del intermareal en Montemar", ylab =
 
 saveWidget(f, file=paste0( getwd(), "/images/montemar1.html"))
 f
+
 ```

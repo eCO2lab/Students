@@ -1,5 +1,5 @@
 ---
-title: "**Fluctuating experiment**"
+pagetitle: "Fluctuating experiment"
 output: html_document
 ---
 
