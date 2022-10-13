@@ -51,12 +51,14 @@ Day_temp<-Day_temp %>% mutate(date = make_date(year, month, day))
 
 interactive <- xts(x = Day_temp$mean_temp, order.by = Day_temp$date)
 
-f<-dygraph(interactive) %>%
-  dyOptions(labelsUTC = FALSE, fillGraph=FALSE, fillAlpha=0.1, drawGrid = FALSE, colors="#D8AE5A") %>%
+f<-dygraph(interactive, main = "Temperatura del intermareal en Montemar", ylab = "Temperatura") %>%
+  dyOptions(labelsUTC = TRUE, fillGraph=FALSE, fillAlpha=0.1, drawGrid = TRUE, colors="#D8AE5A") %>%
   dyRangeSelector() %>%
   dyCrosshair(direction = "vertical") %>%
   dyHighlight(highlightCircleSize = 5, highlightSeriesBackgroundAlpha = 0.2, hideOnMouseOut = FALSE)  %>%
-  dyRoller(rollPeriod = 1)
+  dyRoller(rollPeriod = 1) %>% 
+  dySeries("V1", label = "Temperatura (C°)") %>%
+  dyLegend(show = "always", hideOnMouseOut = FALSE)
 
 saveWidget(f, file=paste0( getwd(), "/images/montemar1.html"))
 f
