@@ -1,6 +1,8 @@
 ---
-pagetitle: "El lab"
+pagetitle: |
+  ![](images/ecolab.png){width=1in}  "El lab"
 output: html_document
+
 ---
 
 # **Ecofisiología y Ecología evolutiva marina**

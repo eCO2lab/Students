@@ -53,5 +53,4 @@ transgeneracionales evaluando aspectos fisiologicos y geneticos."
 
 <div/>
 
-fa("water")
 
