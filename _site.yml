@@ -1,10 +1,10 @@
 name: "eCO2lab"
+title: "eCO2lab"
 output_dir: "."
 navbar:
   logo:
-    image: ecolab.png
+    image: images/logo.png
     href: https://eco2lab.github.io/Students/index.html
-  type: inverse
   left:
     - text: "El lab"
       icon: fa-home
@@ -34,10 +34,10 @@ navbar:
     - icon: fa-brands fa-instagram
       href: https://www.instagram.com/eco2lab/
       
-output:
-  html_document:
-    includes:
-      in_header: header.html
+output: 
+  distill::distill_article:
+    toc: true
+    css: style.css
     
     
     
