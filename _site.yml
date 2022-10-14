@@ -2,9 +2,6 @@ name: "eCO2lab"
 title: "eCO2lab"
 output_dir: "."
 navbar:
-  logo:
-    image: images/logo.png
-    href: https://eco2lab.github.io/Students/index.html
   left:
     - text: "El lab"
       icon: fa-home
@@ -29,15 +26,21 @@ navbar:
   right: 
     - icon: fa-github
       href: https://github.com/eCO2lab/Students
-    - icon: fa-envelope-o
-      href: mailto:lucas.bravo@alumnos.uv.cl 
     - icon: fa-brands fa-instagram
       href: https://www.instagram.com/eco2lab/
+    
       
-output: 
-  distill::distill_article:
-    toc: true
-    css: style.css
+output:
+  html_document:
+    includes:
+     before_body: logo-option.html
+    in_header: header.html
+      #- hero-image.html
+    theme: yeti
+    highlight: tango
+   # toc: true
+    #toc_float: true
+    
     
     
     
