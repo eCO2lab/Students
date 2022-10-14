@@ -1,7 +1,10 @@
 name: "eCO2lab"
 output_dir: "."
 navbar:
-  title: "e°CO2lab"
+
+  logo: 
+      image: ecolab.png
+      href: https://eco2lab.github.io/Students/index.html
   type: inverse
   left:
     - text: "El lab"
