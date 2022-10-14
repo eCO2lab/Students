@@ -32,8 +32,9 @@ a:hover {
   margin-bottom: 0.75em;
 }
 
- 
-.upper-right-logo {
+  /*------------- logo---------------- */
+
+.upper-right-logo{
   margin-top: 20px;
   background-image: url("logo.png");
   height: 150px;

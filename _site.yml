@@ -29,18 +29,12 @@ navbar:
     - icon: fa-brands fa-instagram
       href: https://www.instagram.com/eco2lab/
     
-      
+    
 output:
   html_document:
     includes:
-     before_body: logo-option.html
-    in_header: header.html
-      #- hero-image.html
+      in_header: header.html
+      before_body: logo-.html
     theme: yeti
     highlight: tango
-   # toc: true
-    #toc_float: true
-    
-    
-    
     
