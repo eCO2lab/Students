@@ -1,14 +1,8 @@
 ---
 pagetitle: "El lab"
-title: Ecofisiología y Ecología evolutiva marina
-output: html_document
+output:
+  html_document:
+    toc: false
+    includes:
+      in_header: hero-image.html
 ---
-
-<center>
-
-```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
-library(vembedr)
-embed_url("https://youtu.be/wyj_duWecbQ")
-```
-
-</center>

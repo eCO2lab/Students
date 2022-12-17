@@ -1,23 +1,21 @@
+---
 name: "eCO2lab"
 title: "eCO2lab"
 output_dir: "."
 navbar:
   left:
-    - text: "El lab"
+    - text: "eCO2lab"
       icon: fa-home
       href: index.html
     - text: "Equipo"
       icon: fas fa-users
-      href: about.html
-    - text: "Estudiantes de pregrado"
-      icon: fa-solid fa-seedling
       menu:
-              - text: "Laura"
-                href: Laura.html 
-              - text: "Anibal"
-                href: Anibal.html
-              - text: "Fernanda"
-                href: Fernanda.html
+       - text: "Director y asistentes"
+         icon: fa-solid fa-seedling
+         href: about.html
+       - text: "Estudiantes de pregrado"
+         icon: fa-solid fa-seedling
+         href: pregrados.html             
     - text: "Proyectos"
       icon: fa-solid fa-folder
       href: proyectos.html
@@ -28,13 +26,13 @@ navbar:
       href: https://github.com/eCO2lab/Students
     - icon: fa-brands fa-instagram
       href: https://www.instagram.com/eco2lab/
-    
-    
 output:
   html_document:
+    toc: true
+    toc_float: true
+    css: style.css
     includes:
       in_header: header.html
-      before_body: logo-.html
     theme: yeti
-    highlight: tango
-    
+
+---

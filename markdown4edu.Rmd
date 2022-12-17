@@ -1,0 +1,83 @@
+---
+pagetitle: "markdown 4 students"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+```{r setup, include=FALSE}
+library(learnr)
+```
+
+# **Markdown**
+
+
+Es un lenguaje de marcado ligero que se puede usar para agregar
+elementos de formato a documentos (.txt). Fue creado por John gruber en
+2004. ahora es uno de los lenguajes de marcado más populares a nivel
+mundial
+
+```{r question1}
+  question("¿Que es un archivo .txt?",
+    answer("Un archivo de texto (text file)", correct=T),
+    answer("Un archivo de R")
+  )
+```
+
+## Crear con markdown.
+
+Su gran versatilivad te permite hacer documentos para paginas web,
+documentos, notas, libros, presentaciones, mensajes de mail y Reports
+
+```{r question2}
+q1<-  question("De verdad puedo crear paginas web, enviar mails y tambien crear un report para agregar como material suplementario a mi paper?",
+    answer("SI! <sub>(¿conoces algun ejemplo?)</sub>", correct = TRUE),
+    answer("NO")
+  )
+```
+
+![](images/report.png){width="10 cm"}
+
+## Amigable y de facil aprendizaje.
+
+Aprender a utilizar Rmarkdown dependera solamente de tí, ya que con un
+computador e internet, podras crear todo tipo de cosas y cuando no se te
+ocurre como hacerlo, tranquilo, alguien más antes que tu ya paso horas
+(y quizas más) tratando de solucionar el mismo problema que tienes
+
+Asi que respira y busca alguien que ya haya pasado por lo mismo que tu
+con una busqueda simple en google
+
+¿quieres saber como
+
+```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
+mtcars
+```
+
+```{r print-limit-hint}
+head(mtcars)
+```
+
+### Quiz
+
+*You can include any number of single or multiple choice questions as a
+quiz. Use the `question` function to define a question and the `quiz`
+function for grouping multiple questions together.*
+
+Some questions to verify that you understand the purposes of various
+base and recommended R packages:
+
+```{r quiz}
+quiz(
+  question("Which package contains functions for installing other R packages?",
+    answer("base"),
+    answer("tools"),
+    answer("utils", correct = TRUE),
+    answer("codetools")
+  ),
+  question("Which of the R packages listed below are used to create plots?",
+    answer("lattice", correct = TRUE),
+    answer("tools"),
+    answer("stats"),
+    answer("grid", correct = TRUE)
+  )
+)
+```
