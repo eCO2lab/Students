@@ -21,6 +21,7 @@ navbar:
       href: proyectos.html
     - text: "Montemar"
       href: montemar.html
+      icon: fa-solid fa-database
   right: 
     - icon: fa-github
       href: https://github.com/eCO2lab/Students

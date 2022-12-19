@@ -2,7 +2,9 @@
 pagetitle: "El lab"
 output:
   html_document:
-    toc: false
+   # toc: false
     includes:
-      in_header: hero-image.html
+      in_header:
+      - header.html
+      - hero-image.html
 ---

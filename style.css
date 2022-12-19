@@ -14,6 +14,7 @@ body {
 
 .hero-image {
     position: relative;
+    top: -20px;
     margin-bottom: 1em;
     /* liner gradient tints the image darker for readability*/
     background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(images/logo.jpeg); 
@@ -26,7 +27,7 @@ body {
     align-items: center;
 }
 
-.top-text {
+.top-image {
   position: relative;
   font-size: 34px;
   padding-bottom: 0.5em
@@ -49,6 +50,24 @@ body {
   font-weight: bold;
 }
 
+
+/*-----------------TOC----------------*/
+
+/* Makes TOC sticky (needed if you used a hero image) */
+
+.row-fluid{
+  display: flex; /* Necessary for sticky TOC*/
+
+}
+
+.tocify {
+  position: -webkit-sticky;
+  position: sticky; 
+  top: 120px; /*Controls where TOC stops when sticky */
+  width: 100% !important;
+  border: none;
+}
+
 /*----------LOGO above TOC---------*/
 
 #TOC::before {
@@ -60,4 +79,54 @@ body {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+   /* TOC links */
+
+.list-group-item {
+    color: #7b8a8b;
+    font-size: 16px;
+}
+
+.list-group-item.active {
+    color: #2c3e50;
+    background-color: white;
+    border: none;
+}
+
+.list-group-item:hover, 
+.list-group-item.active:hover {
+    color: #131b23;
+    background-color: white;
+}
+
+
+/*----------------NAVBAR ---------------*/
+.navbar-default {
+    background-color: #141c25f2;
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.active>a, 
+a.dropdown-toggle:hover {
+  background-color: #141c25 !important;
+}
+
+/* Dropdown menu color */
+.navbar-default .dropdown-menu {
+  background-color: #141c25;
+}
+
+/* Dropdown menu hover color */
+  .navbar-default .dropdown-menu>li>a:hover {
+    background-color: #202831f2;
+  }
+
+/* Navbar Links when hovered*/
+.navbar-default .dropdown-menu>.active>a
+.navbar-default .navbar-nav:hover, 
+.navbar-default .navbar-nav>li>a:hover, 
+a.navbar-brand:hover {
+  color: #ffffffab !important;
+  background-color: #141c25;
 }

@@ -29,7 +29,7 @@ montemar_nice_s<-montemar_nice[-c(14200:16100), ]
 montemar_ugly<-montemar_nice[c(14200:16100), ]
 
 #MAKING DATETIME COLUMN and ADDING COLUMNS GROUPS
-montemar_date <- montemar_nice %>%
+montemar_date <- montemar_nice_s %>%
   unite("date", V1:V3, sep = "-")
 montemar_date$date<-anytime::anydate(montemar_date$date)
 
@@ -46,12 +46,13 @@ Day_temp<-montemar_date %>%
 Day_temp<-Day_temp %>% mutate(date = make_date(year, month, day))
 ```
 
+
 ```{r, echo=FALSE}
 #Interactive plot 
 
 interactive <- xts(x = Day_temp$mean_temp, order.by = Day_temp$date)
 
-f<-dygraph(interactive, main = "Temperatura del intermareal en Montemar", ylab = "Temperatura") %>%
+f<-dygraph(interactive, main = NULL, ylab = "Temperatura") %>%
   dyOptions(labelsUTC = TRUE, fillGraph=FALSE, fillAlpha=0.1, drawGrid = TRUE, colors="#D8AE5A") %>%
   dyRangeSelector() %>%
   dyCrosshair(direction = "vertical") %>%
@@ -61,6 +62,19 @@ f<-dygraph(interactive, main = "Temperatura del intermareal en Montemar", ylab =
   dyLegend(show = "always", hideOnMouseOut = FALSE)
 
 saveWidget(f, file=paste0( getwd(), "/images/montemar1.html"))
-f
 
+```
+::: {style="text-align: justify"}
+El trabajo realizado en conjunto con [COSTAR UV](https://costar.uv.cl/)
+permitió la instalación de equipos dentro del intermareal de nuestra
+facultad, de este modo, hemos obtenido una serie de datos de temperatura
+y oxígeno que viene desde el 2021 funcionando.
+
+En el grafico de abajo, pueden ver las mediciones de temperaturas por día desde mayo de 2021 hasta abril de 2022.
+::: 
+
+
+
+```{r, echo=FALSE}
+f
 ```
